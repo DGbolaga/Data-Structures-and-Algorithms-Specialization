@@ -1,9 +1,11 @@
 import random, time
 
 def stress_test_lcs3(n=100, m=100, q=100, value_range=(1, 20)):
+
     """
     Generate three random integer sequences of lengths n, m, q
     and measure how long lcs3 takes.
+    citation: ChatGPT generated the stress test code.
     """
     # random sequences in the given value range
     a = [random.randint(*value_range) for _ in range(n)]
