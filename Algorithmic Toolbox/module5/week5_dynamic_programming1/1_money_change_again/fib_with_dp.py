@@ -1,4 +1,3 @@
-memo = [None] * 100
 def fib_with_dp(n):
     if memo[n] != None:
         return memo[n]
@@ -9,5 +8,6 @@ def fib_with_dp(n):
 
     return memo[n]
 
-
-print(fib_with_dp(int(input("Enter No of Fib Sequence: "))))
+n = int(input("Enter No of Fib Sequence: "))
+memo = [None] * (n + 1)
+print(fib_with_dp(n))
